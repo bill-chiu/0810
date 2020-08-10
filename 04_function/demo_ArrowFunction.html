@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
+
 </head>
+
 <body>
     <div id="debug"></div>
-    <script>
+
     
+    <script>
+
         // function test (a) {
         //     return a + 1;
         // }
-        
+
         // var test = function (a) {
         //     return a + 1;
         // }
-        
+
         // var test = (a) => {
         //     return a + 1;
         // }        
 
         // var test = (a) => { return a + 1; }    
-        var test = (a) => a + 1;    
-        
-        var answer = test(5);
-        
-        alert(answer);
-        
+        // var test = (a) => a + 1;    
+
+        // var answer = test(0);
+
+        // alert(answer);
+
+        function showStar(count) {
+
+            let star = "";
+            for (let i = 1; i <= count; i++) {
+                star += "*";
+            }
+            if (count <= 0) {
+                alert("內容不能小於等於０");
+            }
+            else if (count > 21) {
+                alert("內容不能超過21");
+            }
+            else if (count == 4) {
+                alert("內容不能等於４");
+            }
+            else {
+                alert(star);
+            }
+        }
+        showStar(-1);
+        showStar(2);
+        showStar(4);
+        showStar(22);
+
     </script>
 </body>
+
 </html>

@@ -45,6 +45,7 @@ var x = 100;
 
 $(document).ready(function () {
     var y = 200;
+    //x = 150;
 
     // TODO: Question
     // report.innerHTML = `
@@ -55,9 +56,12 @@ $(document).ready(function () {
 
     $("#okButton").on('click', function () {
         var z = 300;
+        var x = 200;
+        
 
         report.innerHTML = `
             x = ${x}<br>
+            window.x = ${window.x}<br>
             y = ${y}<br>
             z = ${z}<br>
         `;

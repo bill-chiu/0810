@@ -15,7 +15,7 @@
 <p>...</p>
 
 <script type="text/javascript">
-
+var iImage = 0;
 setImage();
 
 function setImage()
@@ -27,9 +27,10 @@ function setImage()
 	img[2] = "images/sd.gif";	url[2] = "http://sandiego.padres.mlb.com/";
 	img[3] = "images/was.gif";	url[3] = "http://washington.nationals.mlb.com/";
 	
-	// 為什麼圖片都不會變呢？
-	var iImage = 0;
 	iImage += 1;
+	if (iImage>= img.length){
+		iImage=0;
+	}
 
 	document.getElementById("imgs").src = img[iImage];
 	document.getElementById("imgshref").href = url[iImage];
