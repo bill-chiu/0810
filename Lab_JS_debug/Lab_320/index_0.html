@@ -15,8 +15,12 @@
     <canvas id="canvasLab" width="240" height="200"
             style="border:1px solid #000000;"></canvas>
 
-
+            
     <script>
+
+        
+
+            function init(){
 
             var c = document.getElementById("canvasLab");
             var ctx = c.getContext("2d");
@@ -25,8 +29,8 @@
             ctx.stroke();
             ctx.clip();
             ctx.drawImage(imgRabbit, 0, 0);
-
-        
+            }
+            window.onload =init;
     </script>
 
 </body>
